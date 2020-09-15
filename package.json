@@ -1,0 +1,31 @@
+{
+  "name": "grpc-ts-sample",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:chiku-rin/grpc-ts-sample.git",
+  "author": "",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "ts-node-dev --inspect --respawn src/server.ts"
+  },
+  "dependencies": {
+    "@types/node": "12",
+    "grpc": "^1.24.3",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-simple-import-sort": "^5.0.3",
+    "grpc-tools": "^1.9.1",
+    "grpc_tools_node_protoc_ts": "^4.1.4",
+    "prettier": "^2.1.1",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.62"
+  }
+}
