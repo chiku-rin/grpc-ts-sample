@@ -13,6 +13,7 @@ const sayHello = async (
 
   const reply = new HelloReply();
   reply.setMessage(`Hello ${request.getName()}! (ID: ${request.getId()})`);
+  console.log(request.getId());
   callback(null, reply);
 };
 
@@ -20,6 +21,6 @@ grpcServer.addService(GreeterService, {
   sayHello,
 });
 
-grpcServer.bind("localhost:50051", ServerCredentials.createInsecure());
+grpcServer.bind("0.0.0.0:50051", ServerCredentials.createInsecure());
 console.log("gRPC server running at http://localhost:50051");
 grpcServer.start();

@@ -3,7 +3,7 @@
   "editor.tabSize": 2,
   "files.eol": "\n",
   "files.encoding": "utf8",
-  "debug.node.autoAttach": "on",
+  "debug.node.autoAttach": "off",
   // -- lint --
   "[javascript]": {
     "editor.formatOnSave": false
